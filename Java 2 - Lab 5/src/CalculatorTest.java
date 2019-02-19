@@ -169,6 +169,19 @@ public class CalculatorTest {
     public void calculateThreeTokensTestInvalidCommand() throws AssertException
     {
         // TODO: complete this test...
+    	try
+    	{
+    		Calculator.calculateThreeTokens(new String[] {"8", "$", "4"});
+    		Assert.fail("Illegal expression did not throw an Exception");
+    	}
+    	catch (NumberFormatException e)
+    	{
+    		
+    	}
+    	catch (Exception e)
+    	{
+    		Assert.fail("Unexpected Exception (not NumberFormat)");
+    	}
     }
 
     /**
