@@ -43,11 +43,12 @@ public class Calculator
 	        {
 	        	throw new CalculatorException("Illegal Command");
 	        }
-	        	
+	     // if command is halve it divides by two   	
 	    if(tokens[0].equalsIgnoreCase("halve"))
 	    	{
 	        	calc = a/2;
 	        }
+	    // if command is negate it flips the sign of the number included
 	    if(tokens[0].equalsIgnoreCase("negate"))
 	        {
 	        	calc = -a;
