@@ -55,9 +55,7 @@ public class Calculator
 	        }
 	    
 	    return calc;
-	        	
-        
-        
+	        
     }
 
     /**
@@ -117,7 +115,6 @@ public class Calculator
     	}
     	
     	return calc;
-    	
     	
     }
 
@@ -202,11 +199,7 @@ public class Calculator
    
         	
     	}
-        
-    	
-    	//return calc;
-        
-
+   
     }
 
     /**
@@ -277,8 +270,6 @@ public class Calculator
     		return String.format("Calculator Exception, message is: %s", excpt.getMessage());
     		
     	}
-    	
-    	
     	
     }
 }
