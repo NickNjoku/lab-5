@@ -8,17 +8,32 @@ Tasks:
 1. Finish Calculator class
 2. Finish calculateTwoTokens method
 3. Finish calculateThreeTokens method
-4. Finish CalculatorTest class
+4. finish execute method
+5. finish parseAndExecute method
+5. Finish CalculatorTest class
+6. Add comments
+7. Delete spacing
+8. Enter different values to make sure code is working fine 
 
 Estimated Time (minutes):
 1. 120
 2. 15
 3. 10
-4. 30
+4. 20
+5. 25
+5. 30
+6. 10
+7. 5
+8. 8
 
 Actual Time (minutes):
 1. 180
 2. 12
 3. 10
-4. 40
+4. 30
+5. 30
+5. 40
+6. 10
+7. 5
+8. 8
 */}
