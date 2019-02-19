@@ -100,17 +100,17 @@ public class Calculator
     	{
     		throw new CalculatorException("Illegal Command");
     	}
-    	
+    	// if they entered command to add
     	if(tokens[1].equalsIgnoreCase("+"))
     	{
     		calc = num1 + num2;
     	}
-    	
+    	// if they entered command to subtract
     	if(tokens[1].equalsIgnoreCase("-"))
     	{
     		calc = num1 - num2;
     	}
-    	
+    	// if they entered command to divide 
     	if(tokens[1].equalsIgnoreCase("/"))
     	{
     		calc = num1 / num2;
@@ -158,37 +158,38 @@ public class Calculator
     		
             // TODO: complete this...
     		
-    		
+    	// if they enter in something empty	
     	case 1:
     		if(tokens.length == 0)
         	{
         		throw new CalculatorException("Illegal Token Length");
         	}
-    		
+    	// if length of string is 1 and the word enter is quit	
     	case 2:
         	if(tokens.length == 1 && tokens[0].equalsIgnoreCase("quit")) 
         	{
         		return calc = Integer.MIN_VALUE;
         	}
-        	
+        // if the length is 1 and quit is not included	
     	case 3:
         	if(tokens.length == 1)
         	{
         		throw new CalculatorException("Illegal Command");
         	}
-        	
+        // if array contains 2 elements 	
     	case 4:
         	if(tokens.length == 2)
         	{
         		return calc = calculateTwoTokens(tokens);
         	}
-        	
+        // if array contains 3 elements	
     	case 5:
         	if(tokens.length == 3)
         	{
         		return calc = calculateThreeTokens(tokens);
         		
         	}
+        // if array is 4 or more error.
     	case 6:
         	if(tokens.length >= 4)
         	{
@@ -243,6 +244,8 @@ public class Calculator
         // Hint: you should try and call execute(). If execute encounters an error, it will throw an exception. This
         // method will catch those exceptions and respond accordingly.
     	
+    	// parses the string and if no exceptions are found it either does calculate two or three method
+    	// if error is found throws andd the catch statements figure out how to handle error and print right error statement 
     	try 
     	{
     		
